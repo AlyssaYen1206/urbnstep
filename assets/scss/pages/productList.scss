@@ -1,0 +1,31 @@
+.breadcrumb-item .active{
+    color:$neutral-900;
+}
+
+.sidebar .active{
+    color:$primary-400
+}
+
+.pagination .disabled{
+    color:$neutral-500;
+}
+.pagination .active{
+    background-color:$primary-300 ;
+}
+
+
+
+@media screen and (max-width:768px) {
+.menu-md{
+    display: none;
+}
+
+.sidebar{
+    display: none;
+}
+
+div.addMember{
+    margin-top: $spacing-l;
+}
+
+}

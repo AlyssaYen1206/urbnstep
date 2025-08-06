@@ -1,0 +1,39 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color:$neutral-900;
+}
+
+img{
+    // vertical-align: center;
+    display: block;
+    width: 100%;
+    height:auto;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color:$neutral-900;
+}
+
+.breadcrumb-item + .breadcrumb-item ::before{
+    content:"/";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing:0em;
+    color:$neutral-300;
+    padding: 0px $spacing-s;
+}
+
+.Strikethrough{
+    text-decoration: line-through;
+}

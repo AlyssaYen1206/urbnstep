@@ -1,0 +1,186 @@
+.ad-banner {
+  position: relative;
+}
+
+.sparkle {
+  position: absolute;
+  top: 174px;
+  right: -38px;
+  width: 76px;
+  height: 64px;
+}
+
+.testbox {
+  position: absolute;
+  background-color: red;
+  width: 20%;
+  right: -38px;
+  width: 76px;
+  height: 64px;
+
+  z-index: 1;
+}
+
+
+.outfit-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.outfit-col-12 {
+  width: calc(100%);
+  padding: $spacing-xxs;
+}
+
+.outfit-col-6 {
+  width: calc(100%/12*6);
+  padding: $spacing-xxs;
+}
+
+.outfit-col-4 {
+  width: calc(100%/12*4);
+  padding: $spacing-xxs;
+}
+
+.outfit-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.header {
+  background-image: url(/assets/images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 289px 0px 289px 200px;
+}
+
+.hotList {
+  position: relative;
+}
+
+.hotItem::before {
+  content: "人氣No.1";
+  position: absolute;
+  padding: 8px 12px;
+  width: auto;
+
+  color: $primary-400;
+  background-color: $primary-100;
+}
+
+.ad-banner {
+  background-image: url(/assets/images/banner-co-branded.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  position: relative;
+
+  .img-star {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+  .img-sparkle{
+    position: absolute;
+    width: 76px;
+    top:274px;
+    right: calc(50% - 357px);
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 黑色遮罩，透明 40% */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+
+  z-index: 1;
+  pointer-events: none;
+  /* 避免遮罩干擾點擊行為 */
+}
+
+
+// .grid-gallery {
+//   display: grid;
+//   grid-template-columns: repeat(6, 1fr);
+//   grid-template-rows: repeat(3, 1fr);
+//   gap: 8px;
+// }
+
+// .grid-item img {
+//   aspect-ratio: 1 / 1;
+//   object-fit: cover;
+//   object-position:50% 50%;  
+// }
+
+// .grid-item img.img-bottom
+// {
+//   object-position:50% 75%; 
+// }
+
+// .item-merge{
+//   grid-column: span 2;
+//   grid-row: span 2;
+// }
+
+
+@media screen and (max-width:768px) {
+  .header {
+    padding: 155px 24px;
+  }
+
+  .md-outfit-row {
+    flex-wrap: nowrap;
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+
+  .md-outfit-col-12,
+  .md-hot-col {
+    min-width: 300px+16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .ad-banner {
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    margin-top: $spacing-l;
+    margin-bottom: $spacing-l;
+    overflow-x: hidden;
+
+    .img-star{
+      top:32px;
+      left:-20px;
+    }
+    .img-sparkle{
+      top:282px;
+      right: -28px;
+    }
+  }
+}

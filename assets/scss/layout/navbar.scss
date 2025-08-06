@@ -1,0 +1,24 @@
+
+.menu-md{
+    display: none;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .menu-list{
+        display: none;
+    }
+    .menu-md{
+        display: block;
+    }
+    .menu-md a{
+        display: inline-block;        
+        width: 50%;
+        text-align: center;
+    }
+    .p-md-s
+    {
+        padding: $spacing-s;
+    }
+}

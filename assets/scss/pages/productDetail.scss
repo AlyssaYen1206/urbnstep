@@ -1,0 +1,110 @@
+.detail-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.detail-col-6 {
+    width: calc(100%/12*6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.card-color {
+    width: 64px;
+}
+
+.btn-size {
+    border: 1px solid $neutral-300;
+    background-color: #FFF;
+    width: 160px;
+    height: 48px;
+}
+
+.btn-size.active,
+.btn-size:hover {
+    border-color: $neutral-900;
+}
+
+.btn-size:disabled {
+    color: $neutral-500;
+    border-color: $neutral-200;
+}
+
+.btn-buy {
+    border: 1px solid $neutral-900;
+    width: 526px;
+}
+
+.btn-buy.favorite {
+    background-color: #fff;
+}
+
+.md-favorite {
+    display: none;
+}
+
+.btn-buy.reserve {
+    background-color: $neutral-900;
+}
+
+.btn-buy i {
+    padding-right: 8px;
+}
+
+
+@media screen and (max-width:768px) {
+
+
+    .md-row,
+    .md-detail-row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .md-col-12,
+    .md-detail-col-12 {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .md-like-row{
+        overflow-x:scroll;        
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+
+    .md-like-col-12{
+        min-width: 300px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .detail-img {
+        display: none;
+    }
+
+    .breadcrumb-item+.breadcrumb-item ::before {
+        padding: 0px 8px;
+    }
+
+    .btn-buy {
+        width: 295px;
+        overflow-x: hidden;
+    }
+
+    .btn-buy.favorite {
+        display: none;
+    }
+
+    .md-favorite {
+        border: none;
+        background-color: #fff;
+        display: block;
+        padding: 12px;
+        width: 48px;
+        margin-left: 8px;
+    }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+//變數、通用樣式
+@import "helper/variables";
+@import "helper/utils";
+
+//第三方套件
+@import "/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+//base
+@import "base/reset";
+@import "base/base";
+
+//components
+@import "components/button";
+
+//layout
+@import "layout/navbar.scss";
+
+//pages
+@import "pages/index";
+@import "pages/productList";
+@import "pages/productDetail";
+@import "pages/brandStory";
+
